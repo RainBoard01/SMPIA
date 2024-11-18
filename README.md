@@ -11,7 +11,7 @@
 | SMPIA_ML_API   | A FastAPI-based service that provides endpoints for interacting with the machine learning model     | FastAPI, Python   |
 | SMPIA_ML_MODEL | A Python project that includes the machine learning model for analyzing motor vibration data        | TensorFlow, Keras |
 
-## Arquitecture
+## Architecture
 
 [![](https://mermaid.ink/img/pako:eNptkV9rgzAUxb_KJU8b1D3sUUbBfzDBbm5aCtMy0nhbZTWRJLaM2u--2E5dYS_qOfnlXDn3RJgokNhkJ2lTQurnHEC1m6ssspwsFcqcrHsfYBkZJ_ZASEhqKptScJwOfTxUDA2xwg24Uhynq8iL_nWT7qwSw5oneHvRFhDwQyUFr5HrMXOEA-8x5EpTfhlgFDDBwRfsCyV4om6Emv4EoKgkMl0ZJHUHz8lWgfvpxPEaniwLcvIeJCk4cZgTsKw5uNnCCV8MEI4x7v-kly2iG87P7mKh9E5i8hbdj3bQc4tXP4hGywPrwYLOE1zTiqsOguFkmtmPMIu4Gr_N_SlwGfUZ86Hvi-gcxlApOFa6hOc0jZMOnJyTGalR1rQqzIpPlwCiS6xNVbb5LHBL271pO-dng9JWi-SbM2Jr2eKMSNHuSmJv6V4Z1TYF1ehX1CykHt2G8g8hBn3-AVdBs6g?type=png)](https://mermaid.live/edit#pako:eNptkV9rgzAUxb_KJU8b1D3sUUbBfzDBbm5aCtMy0nhbZTWRJLaM2u--2E5dYS_qOfnlXDn3RJgokNhkJ2lTQurnHEC1m6ssspwsFcqcrHsfYBkZJ_ZASEhqKptScJwOfTxUDA2xwg24Uhynq8iL_nWT7qwSw5oneHvRFhDwQyUFr5HrMXOEA-8x5EpTfhlgFDDBwRfsCyV4om6Emv4EoKgkMl0ZJHUHz8lWgfvpxPEaniwLcvIeJCk4cZgTsKw5uNnCCV8MEI4x7v-kly2iG87P7mKh9E5i8hbdj3bQc4tXP4hGywPrwYLOE1zTiqsOguFkmtmPMIu4Gr_N_SlwGfUZ86Hvi-gcxlApOFa6hOc0jZMOnJyTGalR1rQqzIpPlwCiS6xNVbb5LHBL271pO-dng9JWi-SbM2Jr2eKMSNHuSmJv6V4Z1TYF1ehX1CykHt2G8g8hBn3-AVdBs6g)
 
