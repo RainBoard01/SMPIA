@@ -13,7 +13,29 @@
 
 ## Architecture
 
-[![](https://mermaid.ink/img/pako:eNptkV9rgzAUxb_KJU8b1D3sUUbBfzDBbm5aCtMy0nhbZTWRJLaM2u--2E5dYS_qOfnlXDn3RJgokNhkJ2lTQurnHEC1m6ssspwsFcqcrHsfYBkZJ_ZASEhqKptScJwOfTxUDA2xwg24Uhynq8iL_nWT7qwSw5oneHvRFhDwQyUFr5HrMXOEA-8x5EpTfhlgFDDBwRfsCyV4om6Emv4EoKgkMl0ZJHUHz8lWgfvpxPEaniwLcvIeJCk4cZgTsKw5uNnCCV8MEI4x7v-kly2iG87P7mKh9E5i8hbdj3bQc4tXP4hGywPrwYLOE1zTiqsOguFkmtmPMIu4Gr_N_SlwGfUZ86Hvi-gcxlApOFa6hOc0jZMOnJyTGalR1rQqzIpPlwCiS6xNVbb5LHBL271pO-dng9JWi-SbM2Jr2eKMSNHuSmJv6V4Z1TYF1ehX1CykHt2G8g8hBn3-AVdBs6g?type=png)](https://mermaid.live/edit#pako:eNptkV9rgzAUxb_KJU8b1D3sUUbBfzDBbm5aCtMy0nhbZTWRJLaM2u--2E5dYS_qOfnlXDn3RJgokNhkJ2lTQurnHEC1m6ssspwsFcqcrHsfYBkZJ_ZASEhqKptScJwOfTxUDA2xwg24Uhynq8iL_nWT7qwSw5oneHvRFhDwQyUFr5HrMXOEA-8x5EpTfhlgFDDBwRfsCyV4om6Emv4EoKgkMl0ZJHUHz8lWgfvpxPEaniwLcvIeJCk4cZgTsKw5uNnCCV8MEI4x7v-kly2iG87P7mKh9E5i8hbdj3bQc4tXP4hGywPrwYLOE1zTiqsOguFkmtmPMIu4Gr_N_SlwGfUZ86Hvi-gcxlApOFa6hOc0jZMOnJyTGalR1rQqzIpPlwCiS6xNVbb5LHBL271pO-dng9JWi-SbM2Jr2eKMSNHuSmJv6V4Z1TYF1ehX1CykHt2G8g8hBn3-AVdBs6g)
+```mermaid
+graph TD
+  subgraph d["User"]
+    UL["PC or Smarphone"]
+    UDevice["Web Browser"]
+  end
+
+  subgraph AWS["AWS Cloud Environment"]
+    subgraph EC2Instance["EC2 con Docker Compose"]
+      direction TB
+      A[WEB_APP] <-- "REST API" --> B[MAIN_API]
+      B <-- "REST API" --> C[ML_API]
+      D[(PostgreSQL)]
+      E[ML_MODEL]
+      C -.- |Contains| E
+
+      B --> D
+
+    end
+  end
+
+  UL -.-> UDevice -.->|Access with HTTPS| A
+```
 
 ## Requirements
 
