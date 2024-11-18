@@ -1,0 +1,9 @@
+[submodule "SMPIA_ML_API"]
+	path = SMPIA_ML_API
+	url = https://github.com/RainBoard01/SMPIA_ML_API.git
+[submodule "SMPIA_MAIN_API"]
+	path = SMPIA_MAIN_API
+	url = https://github.com/RainBoard01/SMPIA_MAIN_API.git
+[submodule "SMPIA_WEB_APP"]
+	path = SMPIA_WEB_APP
+	url = https://github.com/RainBoard01/SMPIA_WEB_APP.git
