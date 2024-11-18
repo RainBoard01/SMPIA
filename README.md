@@ -4,12 +4,12 @@
 
 ## Subprojects
 
-| Service Name   | Description                                                                                         | Technologies Used |
-| -------------- | --------------------------------------------------------------------------------------------------- | ----------------- |
-| SMPIA_WEB_APP  | Client-side application built with React, serving as the frontend interface for user interactions   | React, TypeScript |
-| SMPIA_MAIN_API | Main API built with Strapi, responsible for authentication and storing measurements in the database | Strapi, Node.js   |
-| SMPIA_ML_API   | A FastAPI-based service that provides endpoints for interacting with the machine learning model     | FastAPI, Python   |
-| SMPIA_ML_MODEL | A Python project that includes the machine learning model for analyzing motor vibration data        | TensorFlow, Keras |
+| Service Name                                                    | Description                                                                                         | Technologies Used |
+| --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ----------------- |
+| [SMPIA_WEB_APP](https://github.com/RainBoard01/SMPIA_WEB_APP)   | Client-side application built with React, serving as the frontend interface for user interactions   | React, TypeScript |
+| [SMPIA_MAIN_API](https://github.com/RainBoard01/SMPIA_MAIN_API) | Main API built with Strapi, responsible for authentication and storing measurements in the database | Strapi, Node.js   |
+| [SMPIA_ML_API](https://github.com/RainBoard01/SMPIA_ML_API)     | A FastAPI-based service that provides endpoints for interacting with the machine learning model     | FastAPI, Python   |
+| [SMPIA_ML_MODEL](https://github.com/RainBoard01/SMPIA_ML_MODEL) | A Python project that includes the machine learning model for analyzing motor vibration data        | TensorFlow, Keras |
 
 ## Architecture
 
