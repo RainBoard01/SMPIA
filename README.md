@@ -1,4 +1,4 @@
-# SMPI Project
+# SMPIA Project
 
 **SMPIA** stands for "Sistema de Mantenimiento Predictivo con Inteligencia Artificial". This project is based on microservices architecture and focuses on reading vibration data from motors, analyzing it, and classifying the type of fault using a machine learning neural network.
 
