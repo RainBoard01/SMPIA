@@ -16,25 +16,30 @@
 ```mermaid
 graph TD
   subgraph d["User"]
-    UL["PC or Smarphone"]
-    UDevice["Web Browser"]
+    UL["PC or Smartphone"]:::userStyle
+    UDevice["Web Browser"]:::userStyle
   end
 
   subgraph AWS["AWS Cloud Environment"]
     subgraph EC2Instance["EC2 con Docker Compose"]
       direction TB
-      A[WEB_APP] <-- "REST API" --> B[MAIN_API]
-      B <-- "REST API" --> C[ML_API]
-      D[(PostgreSQL)]
-      E[ML_MODEL]
+      A[WEB_APP]:::appStyle <-- "REST API" --> B[MAIN_API]:::apiStyle
+      B <-- "REST API" --> C[ML_API]:::apiStyle
+      D[(PostgreSQL)]:::dbStyle
+      E[ML_MODEL]:::modelStyle
       C -.- |Contains| E
 
       B --> D
-
     end
   end
 
   UL -.-> UDevice -.->|Access with HTTPS| A
+
+  classDef userStyle fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff;
+  classDef appStyle fill:#2196F3,stroke:#333,stroke-width:2px,color:#fff;
+  classDef apiStyle fill:#FF9800,stroke:#333,stroke-width:2px,color:#fff;
+  classDef dbStyle fill:#9C27B0,stroke:#333,stroke-width:2px,color:#fff;
+  classDef modelStyle fill:#Ff0000,stroke:#333,stroke-width:2px,color:#fff;
 ```
 
 ## Requirements
